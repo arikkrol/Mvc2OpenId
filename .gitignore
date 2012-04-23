@@ -1,0 +1,10 @@
+obj/
+Obj/
+bin/
+Bin/
+*.suo
+*.resharper.user
+_ReSharper.*
+Tmp/
+Log/
+Uploads/
