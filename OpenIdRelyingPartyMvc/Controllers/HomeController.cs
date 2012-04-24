@@ -23,7 +23,7 @@
 
             if (response == null || response.Status != AuthenticationStatus.Authenticated)
             {
-                return RedirectToAction("Index", "LogOn");
+                return RedirectToAction("LogInOpenId", "LogOn");
             }
 
             return View();

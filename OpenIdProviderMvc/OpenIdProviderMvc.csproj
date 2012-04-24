@@ -76,6 +76,7 @@
     <Compile Include="Code\Util.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogOnController.cs" />
     <Compile Include="Controllers\OpenIdController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Default.aspx.cs">
@@ -90,12 +91,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Users.xml" />
+    <Content Include="Content\CSS\LogOnIndex.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\LogOnIndex.js" />
     <Content Include="Views\Account\ChangePassword.aspx" />
     <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
     <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\LogOn\Index.aspx" />
     <Content Include="Views\OpenId\AskUser.aspx" />
     <Content Include="Views\Shared\Xrds.aspx" />
     <Content Include="Views\OpenId\Provider.aspx" />
@@ -125,6 +129,9 @@
       <Project>{AA78D112-D889-414B-A7D4-467B34C7B663}</Project>
       <Name>DotNetOpenAuth.ApplicationBlock</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Sample.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
