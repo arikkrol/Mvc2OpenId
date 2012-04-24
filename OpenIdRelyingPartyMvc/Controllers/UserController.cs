@@ -39,6 +39,8 @@
 				Identifier id;
 				if (Identifier.TryParse(Request.Form["openid_identifier"], out id)) {
 					try {
+                        //TODO: Arik - this takes the provider url (http://openidprovider/home/xrds) and redirects to a
+                        //login page on the provider site.
 						return openid.CreateRequest(Request.Form["openid_identifier"]).RedirectingResponse.AsActionResult();
 					} catch (ProtocolException ex) {
 						ViewData["Message"] = ex.Message;
